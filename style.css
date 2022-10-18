@@ -413,6 +413,10 @@ img{
     gap: 2rem;
 }
 
+.closeIcon{
+    display: none;
+}
+
 
 
 
@@ -451,14 +455,56 @@ img{
   }
 
   nav{
-    position: absolute;
+    position: fixed;
     width: 100%;
-    background-color: var(--Very-Dark-Blue);
+    background-color: hsl(229, 31%, 21%,.9);
+    backdrop-filter: blur(2px);
     z-index: 3;
     left: 0;
     height: 100vh;
-    top: -300rem;
+    top: 0rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all .3s ease-in-out;
+  }
+  .closeIcon{
+    display: block;
+    position: relative;
+    right: -10rem;
+    z-index: 10;
+}
+
+  nav .login{
+    place-self: center;
+    width: 90vw;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 3px solid white;
+
+  }
+
+  nav ul{
+    margin-bottom: 0;
+  }
+  nav ul li:first-child{
+    border-top: 1px solid white;
+  }
+  nav ul li{
     display: grid;
+    place-items: center;
+    padding: 1rem;
+    width: 90vw;
+    position: relative;
+    right: 1rem;
+    border-bottom: 1px solid rgb(211, 205, 205);
+  }
+  nav ul a{
+    
+    color: rgb(231, 228, 228);
+    font-size: 1.7rem;
+    font-weight: lighter;
   }
 
   .hero{

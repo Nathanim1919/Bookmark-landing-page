@@ -3,6 +3,17 @@ const second = document.querySelector('.second');
 const third = document.querySelector('.third');
 const featurPpic = document.querySelector('.feature-pic');
 const content = document.querySelector('.content');
+const closeIcon = document.querySelector('.closeIcon');
+const nav = document.querySelector('nav');
+const menu = document.querySelector('.menu');
+
+closeIcon.addEventListener('click',()=>{
+nav.style.top = '-50rem'
+});
+
+menu.addEventListener('click',()=>{
+      nav.style.top = '0rem'
+      })
 
 first.addEventListener('click',()=>{
     content.textContent = '';
