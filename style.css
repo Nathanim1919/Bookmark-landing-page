@@ -150,6 +150,7 @@ button.getChrome:hover{
 svg{
     position: relative;
     z-index: 2;
+    transition: all .5s ease-in-out;
 }
 .svgbackground{
     position: absolute;
@@ -159,6 +160,11 @@ svg{
     right: 0rem;
     border-bottom-left-radius: 160px;
     top: 14rem;
+    transition: all .5s ease-in-out;
+}
+
+img{
+    transition: all .5s ease-in-out;
 }
 
 .bookmark{
@@ -192,13 +198,19 @@ svg{
 
 }
 
+.content{
+    animation: show 3s;
+}
+
 .options ul li{
     list-style: none;
     padding: 1rem 1rem;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
 }
 .options ul li.first{
     border-bottom: 3px solid var(--Soft-Red);
-
 }
 
 .feature-hero{
@@ -265,6 +277,8 @@ svg{
     align-items: center;
     gap: 2rem;
 }
+
+
 
 .apps > div{
     border-radius: 10px;
@@ -342,6 +356,7 @@ svg{
     place-items: center;
     background-color: var(--Soft-Blue);
     color: white;
+    padding: 3rem;
 }
 .footer p{
     margin: 4rem;
@@ -350,6 +365,7 @@ svg{
 }
 
 .footer h1{
+    font-weight: lighter;
     margin-top: 0;
     margin-bottom: 0;
 }
