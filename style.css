@@ -625,8 +625,8 @@ img{
 .footer p{
     position: relative;
     left: -16.5%;
-    width: 83vw;
-   font-size: 1rem;
+    width: 80vw;
+   font-size: .9rem;
    color: rgb(230, 224, 224);
 }
 .footer input[type="text"],
@@ -638,17 +638,23 @@ img{
 
 /* contact info */
 
+
+
 .contactInfo,.contactInfo ul{
     display: grid;
     place-items: center;
+    position: relative;
+    left: -13%; 
 }
 .social{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 5rem;
+    gap: 2rem;
     position: relative;
-    left: -63%; 
+    left: -10%; 
 }
+
+
 
 }
