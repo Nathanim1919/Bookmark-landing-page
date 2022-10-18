@@ -226,15 +226,6 @@ img{
     z-index: 2;
 }
 
-.feature-hero-backdrop{
-    width: 536px;
-    background-color: #eee;
-    height: 346px;
-    position: absolute;
-    left: 9.46rem;
-    margin-top: 0rem;
-    border-radius: 10px;
-}
 
 .feature-hero-backdropShadow{
     width: 600px;
@@ -440,7 +431,7 @@ img{
 @media(max-width:500px){
  html,body{
     overflow-x: hidden;
-
+    display: grid;
  }
 
   .menu{
@@ -477,7 +468,8 @@ img{
     position: relative;
     grid-row: 2/3;
     top: -19rem;
-    width: 83vw;
+    width: 89vw;
+    left: -40%;
     place-items: center;
   }
   .hero .discription h1{
@@ -489,7 +481,7 @@ img{
   }
   .hero-pic{
     transform: scale(.55);
-    left: -3%;
+    left: -40%;
     top: 1rem;
   }
   .svgbackground{
@@ -504,5 +496,159 @@ img{
   .btns{
     place-self: center;
   }
+
+  /* feature section */
+ 
+  .feature-hero{
+    grid-template-columns: 400px;
+}
+
+.feature-pic{
+    transform: scale(.6);
+    position: relative;
+    left: -20%;
+}
+
+
+.feature-hero-backdropShadow{
+    width: 350px;
+    background-color: var(--Soft-Blue);
+    height: 200px;
+    position: absolute;
+    left: -30%;
+    margin-top: -10rem;
+    border-bottom-right-radius: 100px;
+}
+.feature{
+    width: 90vw;
+    position: relative;
+    left: -14%;
+}
+.feature-section{
+    margin-top: -10rem;
+}
+
+.options ul{
+    flex-direction: column;
+    gap: 0rem;
+    position: relative;
+    left: -25%;
+  }
+  .options ul li{
+    display: grid;
+    place-items: center;
+    border: 1px solid rgb(211, 208, 208);
+    width: 95vw;
+    border-left: none;
+    border-right: none;
+  }
+
+.content{
+    text-align: center;
+    width: 90vw;
+    position: relative;
+    left: -23%;
+}
+.content h1{
+    font-size: 1.5rem;
+    
+}
+
+.feature-discription{
+    display: grif;
+    place-content: center;
+}
+
+.more-info{
+    position: relative;
+    left: 15%;
+}
+
+/* download */
+
+.downloadExtension .download-hero{
+    width: 90vw;
+    position: relative;
+    left: -14%;
+}
+
+.downloadExtension .download-hero h1{
+    font-size: 1.5rem;
+}
+.apps{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    left: -14%;
+}
+
+.questionHero{
+    width: 90vw;
+    position: relative;
+    left: -13%;
+}
+.questionHero h1{
+   font-size: 1.1rem;
+}
+.questionContainer > div{
+    display: grid;
+    grid-template-columns: 75vw 10vw;
+    place-items: center;
+    justify-self: end;
+    border-top: 2px solid var(--Grayish-Blue);
+    position: relative;
+    left: -23%;
+     
+ }
+
+ .q-btn{
+    left: -13%;
+ }
+
+
+ /* footer */
+ .footer .form{
+    margin: 2rem;
+    display: grid;
+    width: 95vw;
+    position: relative;
+    left: -16.5%;
+}
+.footer h1{
+    position: relative;
+    left: -16.5%;
+   font-size: 1.6rem;
+}
+.footer p{
+    position: relative;
+    left: -16.5%;
+    width: 83vw;
+   font-size: 1rem;
+   color: rgb(230, 224, 224);
+}
+.footer input[type="text"],
+.footer input[type='submit']{
+    width: 95vw;
+    padding: 1rem;
+}
+
+
+/* contact info */
+
+.contactInfo,.contactInfo ul{
+    display: grid;
+    place-items: center;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    position: relative;
+    left: -63%; 
+}
 
 }
