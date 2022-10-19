@@ -488,7 +488,7 @@ img{
     z-index: 3;
     left: 0;
     height: 100vh;
-    top: 0rem;
+    top: -50rem;
     padding: 1rem;
     align-items: center;
     justify-content: flex-start;
