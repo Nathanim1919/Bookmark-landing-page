@@ -738,7 +738,8 @@ img{
     align-items: center;
     gap: 2rem;
     position: relative;
-    left: -10%; 
+    left: -10%;
+    padding: 3rem; 
 }
 
 
