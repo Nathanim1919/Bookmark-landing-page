@@ -6,14 +6,26 @@ const content = document.querySelector('.content');
 const closeIcon = document.querySelector('.closeIcon');
 const nav = document.querySelector('nav');
 const menu = document.querySelector('.menu');
+const questionContainer = document.querySelectorAll('.questionContainer div svg');
+
+
+questionContainer.forEach(tap=>{
+      tap.addEventListener('click',(e)=>{
+            e.target.parentNode.classList.toggle('show')
+      })
+})
+
+
 
 closeIcon.addEventListener('click',()=>{
 nav.style.top = '-50rem'
 });
 
+
 menu.addEventListener('click',()=>{
-      nav.style.top = '0rem'
-      })
+         nav.style.top = '0rem';
+      });
+
 
 first.addEventListener('click',()=>{
     content.textContent = '';
