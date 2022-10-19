@@ -88,6 +88,7 @@ nav .login:hover{
 }
 
 .hero .discription{
+    animation: pop 3s;
     display: grid;
     width: 450px;
     place-self: center;
@@ -105,6 +106,7 @@ nav .login:hover{
 }
 
 .hero-pic{
+    animation: pop 2s;
     top: 5rem;
 }
 
@@ -453,6 +455,17 @@ img{
 
     100%{
         opacity: 1;
+    }
+
+}
+@keyframes pop{
+
+    0%{
+        transform: scale(0);
+    }
+
+    100%{
+       transform: scale(1);
     }
 
 }
