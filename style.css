@@ -467,7 +467,7 @@ img{
   .menu{
     display: block;
     position: relative;
-    right: -4rem;
+    right: 0rem;
   }
 
   nav,nav ul{
